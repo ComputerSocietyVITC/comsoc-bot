@@ -4,7 +4,7 @@ import json
 
 
 def read_token():
-    with open("token.txt", "r") as f:
+    with open("data/token.txt", "r") as f:
         lines = f.readlines()
         return lines[0].strip()
 
@@ -16,7 +16,7 @@ intents.members = True
 
 client = commands.Bot(command_prefix="$", intents=intents)
 
-memFile = open('membershipids.txt', 'r')
+memFile = open('data/membershipids.txt', 'r')
 membershipids = memFile.readlines()
 
 
